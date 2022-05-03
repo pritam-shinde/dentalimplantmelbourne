@@ -25,7 +25,7 @@ useEffect(()=>{
                                 blogs.map(item=>{
                                     return <Grid key={item.id} item={true} xs={12} sm={6} md={6} lg={4}>
                                         <Box>
-                                            <CustomCard image={item.yoast_head_json.og_image[0].url} title={item.title.rendered} align="left" para={`${item.yoast_head_json.og_description.split(" ").slice(0, 20).join(" ")} [...]`} btnText="Read More" link={item.link} date={`${item.date.split("T")[0].split("-")[2]} ${months[Number(item.date.split("T")[0].split("-")[1])-1]}, ${item.date.split("T")[0].split("-")[0]}`} />
+                                            <CustomCard image={item.yoast_head_json.og_image[0].url} title={item.title.rendered} align="left" para={`${item.yoast_head_json.og_description.split(" ").slice(0, 20).join(" ")} [...]`} btnText="Read More" link={`/blog/${item.slug}/`} date={`${item.date.split("T")[0].split("-")[2]} ${months[Number(item.date.split("T")[0].split("-")[1])-1]}, ${item.date.split("T")[0].split("-")[0]}`} />
                                         </Box>
                                     </Grid>
                                 })

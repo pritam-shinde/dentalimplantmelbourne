@@ -26,7 +26,7 @@ const AboutSec = () => {
                                         return <Paragraph key={`aboutPara${index}`} cls="text-muted" para={item} />
                                     })
                                 }
-                                <CustomButton btnText="About Us" />
+                                <CustomButton btnText="About Us"  />
                             </Grid>
                             <Grid item={true} xs={12} sm={6} md={6} lg={6} className="d-lg-block d-none">
                                 <Box>

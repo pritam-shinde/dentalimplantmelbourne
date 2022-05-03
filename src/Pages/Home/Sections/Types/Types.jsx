@@ -16,7 +16,7 @@ const Types = () => {
                                 data.map(item => {
                                     return <Grid key={item.id} item={true} xs={12} sm={6} md={6} lg={4}>
                                         <Box>
-                                            <CustomCard cls="d-flex justify-content-center" image={item.image} title={item.title} align="center" para={item.para} btnText="Read More" link="#" />
+                                            <CustomCard cls="d-flex justify-content-center" image={item.image} title={item.title} align="center" para={item.para} btnText="Read More" link={'/treatment'} />
                                         </Box>
                                     </Grid>
                                 })

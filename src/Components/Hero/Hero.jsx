@@ -43,8 +43,8 @@ const Hero = ({ subtitle, heading, body, btnTxt, pageHead }) => {
                     <Paragraph cls="text-white" para={body} />
                     <CustomButton btnText={btnTxt} size="large" />
                   </Box> : location.pathname !== "/" ? <Box>
-                    <Typography variant="h1" align='center' className={` ${location.pathname === "/about" ? "text-white" : "text-dark"} ${width < 576 ? classes.headingMob : classes.headingDesk} ${location.pathname === "/privacy-policy" ? "text-white" : "text-dark"} `}>{pageHead}</Typography>
-                    <Typography variant='subtitle1' align='center' className={`${classes.pagePara} ${location.pathname === "/about" ? "text-white" : "text-dark"}`}>{body}</Typography>
+                    <Typography variant="h1" align='center' className={` ${location.pathname === "/about/" ? "text-white" : "text-dark"} ${width < 576 ? classes.headingMob : classes.headingDesk} ${location.pathname === "/privacy-policy/" ? "text-white" : "text-dark"} `}>{pageHead}</Typography>
+                    <Typography variant='subtitle1' align='center' className={`${classes.pagePara} ${location.pathname === "/about/" ? "text-white" : "text-dark"}`}>{body}</Typography>
                   </Box> : null
                 }
               </Box>

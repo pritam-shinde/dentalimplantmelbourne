@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,uBAAuB,CAAA;EACnB,MAAM,EAAE,eAAe;CAC1B",
+    "sources": [
+        "treatment.scss"
+    ],
+    "names": [],
+    "file": "treatment.css"
+}

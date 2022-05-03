@@ -2,6 +2,7 @@ import { Hero } from '../../Components/Components'
 import { Helmet } from "react-helmet";
 import Data from './Data/Data'
 import { Container, Grid, Box } from "@mui/material";
+import './sass/treatment.css'
 
 
 const Treatment = () => {
