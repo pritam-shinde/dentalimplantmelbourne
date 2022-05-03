@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,AAAA,MAAM,CAAC;EACR,SAAS,EAAE,UAAU;CACxB;;AAED,AAAA,WAAW,CAAA;EACP,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,MAAM;EACjB,WAAW,EAAE,KAAK;CACrB",
+    "sources": [
+        "Cost.scss"
+    ],
+    "names": [],
+    "file": "Cost.css"
+}

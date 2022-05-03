@@ -1,0 +1,82 @@
+#aboutCovid {
+  height: 100vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.85)), to(rgba(255, 255, 255, 0.85))), url("../../../Images/covid bg.png");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../../../Images/covid bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media only screen and (max-width: 576px) {
+  #aboutCovid {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  #aboutCovid {
+    height: auto;
+  }
+}
+
+#aboutCovid .covidImg {
+  position: relative;
+}
+
+#aboutCovid .covidImg img {
+  position: relative;
+  z-index: 2;
+}
+
+#aboutCovid .covidImg .shape {
+  position: absolute;
+  top: -3rem;
+  left: -4rem;
+}
+
+@media only screen and (max-width: 576px) {
+  #aboutCovid .covidImg .shape {
+    top: -1rem;
+    left: -2rem;
+  }
+}
+
+#aboutCovid .covidImg .shape img {
+  position: relative;
+  width: 104%;
+  z-index: 1;
+  -webkit-animation: moveBounce 5s linear both infinite;
+          animation: moveBounce 5s linear both infinite;
+}
+
+@-webkit-keyframes moveBounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes moveBounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+/*# sourceMappingURL=AboutCovid.css.map */

@@ -1,0 +1,23 @@
+#paymentOptBox {
+  border: 1px solid #ccc;
+  min-height: 260px;
+  position: relative;
+  border-radius: 10px;
+  background-color: #eee;
+}
+
+#paymentOptBox #logoBox {
+  border: 1px solid #ccc;
+  width: 75%;
+  position: relative;
+  top: -3rem;
+  left: 3rem;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 576px) {
+  #paymentOptBox #logoBox {
+    left: 2.5rem;
+  }
+}
+/*# sourceMappingURL=PayentOpt.css.map */

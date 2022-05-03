@@ -1,0 +1,30 @@
+#Hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../Images/covidHeroBggg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1.5rem;
+
+    @media only screen and (max-width: 576px) {
+        & {
+            height: 50vh;
+
+            & .MuiTypography-h1 {
+                font-size: 2.5rem !important;
+            }
+        }
+    }
+
+    @media only screen and(min-width: 577px) and(max-width: 992px) {
+        & {
+            height: 50vh;
+
+            & .MuiTypography-h1 {
+                font-size: 4rem !important;
+            }
+        }
+    }
+
+}

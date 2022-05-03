@@ -1,0 +1,64 @@
+#aboutCovid {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('../../../Images/covid\ bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    @media only screen and(max-width: 576px){
+        &{
+            height: auto;
+        }
+    }
+
+    @media only screen and(min-width: 577px) and(max-width: 992px){
+        &{
+            height: auto;
+        }
+    }
+
+    & .covidImg {
+        position: relative;
+
+        & img {
+            position: relative;
+            z-index: 2;
+        }
+
+        & .shape {
+            position: absolute;
+            top: -3rem;
+            left: -4rem;
+
+            @media only screen and (max-width: 576px){
+                &{
+                    top: -1rem;
+                    left: -2rem;
+                }
+            }
+
+            & img {
+                position: relative;
+                width: 104%;
+                z-index: 1;
+                animation: moveBounce 5s linear both infinite;
+
+                @keyframes moveBounce {
+                    0% {
+                        transform: translateY(0);
+                    }
+
+                    50% {
+                        transform: translateY(-10px);
+                    }
+
+                    100% {
+                        transform: translateY(0);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+#blogPage{
+    & .makeStyles-heroOther-3{
+        height: 74vh;
+
+        & h1.MuiTypography-h1{
+            color: #fff !important;
+        }
+    }
+
+    @media only screen and (max-width: 576px){
+        &{
+            & .makeStyles-heroOther-3{
+                height: 26vh;
+
+                & h1.MuiTypography-h1{
+                    color: #fff !important;
+                }
+            }
+        }
+    }
+}

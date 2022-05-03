@@ -1,0 +1,76 @@
+#preventSec {
+    height: 110vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../../../Images/covid\ bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media only screen and (max-width: 576px) {
+        & {
+            height: auto;
+        }
+    }
+
+    @media only screen and(min-width: 577px) and(max-width: 992px){
+        & {
+            height: auto;
+        }
+    }
+
+    & .imgContainer {
+        position: relative;
+
+        & .shape {
+            position: absolute;
+            top: -2.8rem;
+            left: -1rem;
+
+            & img {
+                animation: spin 30s infinite linear;
+                z-index: -1;
+                max-width: 94% !important;
+
+                @keyframes spin {
+                    0% {
+                        transform: rotate(0deg);
+                    }
+
+                    100% {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+    }
+
+    & .media {
+        & .circle {
+            height: 3rem;
+            width: 3rem;
+            border: 1px solid #0cb8b6;
+            padding: 5px;
+            border-radius: 50%;
+            position: relative;
+
+            & .MuiAvatar-root {
+                height: 2.5rem !important;
+                width: 2.5rem !important;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        &:hover .circle{
+            transform: rotateY(360deg);
+        }
+
+        & .media-body{
+            & h5{
+                font-weight: 700;
+            }
+        }
+    }
+}

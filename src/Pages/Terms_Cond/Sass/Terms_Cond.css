@@ -1,0 +1,9 @@
+#terms .MuiList-root .MuiListItem-root {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+#terms .MuiList-root .MuiListItem-root .MuiListItem-root {
+  min-width: 30px !important;
+}
+/*# sourceMappingURL=Terms_Cond.css.map */

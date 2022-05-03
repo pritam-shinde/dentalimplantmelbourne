@@ -1,0 +1,27 @@
+#singleBlog {
+
+    & #content {
+        & .MuiTypography-h1 {
+            font-size: 2rem;
+        }
+    }
+
+
+
+    & .MuiCardHeader-root.css-185gdzj-MuiCardHeader-root {
+        background-color: #ececec;
+        border-left: 3px solid #0cb8b6;
+
+        & .MuiTypography-h5 {
+            font-size: 1.3rem !important;
+            font-weight: 700 !important;
+        }
+    }
+
+    & .widget {
+        & .MuiTypography-h5 {
+            font-size: 1rem !important;
+            font-weight: 700 !important;
+        }
+    }
+}

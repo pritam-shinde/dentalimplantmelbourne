@@ -1,0 +1,32 @@
+#preventionSec {
+
+    & .symCard {
+        border: 1px solid #0cb8b6;
+        border-radius: 0.5rem;
+
+        & .MuiSvgIcon-root {
+            color: #0cb8b6;
+            font-size: 1.5rem !important;
+            font-weight: 700 !important;
+        }
+
+        & .symTitle {
+            font-size: 1.1rem !important;
+            font-weight: 600 !important;
+        }
+
+        &:hover {
+            background-color: #0cb8b6;
+
+            & .MuiSvgIcon-root {
+                color: #fff !important;
+            }
+
+            & .symTitle {
+                color: #fff !important;
+            }
+        }
+    }
+
+
+}

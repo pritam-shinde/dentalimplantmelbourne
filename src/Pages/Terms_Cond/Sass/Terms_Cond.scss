@@ -1,0 +1,12 @@
+#terms{
+    & .MuiList-root{
+        & .MuiListItem-root{
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+
+            & .MuiListItem-root{
+                min-width: 30px !important;
+            }
+        }
+    }
+}

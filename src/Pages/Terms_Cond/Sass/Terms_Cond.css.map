@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEQ,MAFF,CACA,aAAa,CACT,iBAAiB,CAAA;EACf,WAAW,EAAE,YAAY;EACzB,cAAc,EAAE,YAAY;CAK/B;;AATT,AAMY,MANN,CACA,aAAa,CACT,iBAAiB,CAIb,iBAAiB,CAAA;EACf,SAAS,EAAE,eAAe;CAC7B",
+    "sources": [
+        "Terms_Cond.scss"
+    ],
+    "names": [],
+    "file": "Terms_Cond.css"
+}

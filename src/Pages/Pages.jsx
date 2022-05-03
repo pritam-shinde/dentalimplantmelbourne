@@ -1,0 +1,11 @@
+export {default as Home} from './Home/Home';
+export {default as Treatment} from './Treatment/Treatment';
+export {default as Cost} from './Cost/Cost';
+export {default as About} from './About/About';
+export {default as Payment} from './PaymentOpt/Payment';
+export {default as Blog} from './Blog/Blog';
+export {default as SingleBlog} from './SingleBlog/SingleBlog';
+export {default as Covid} from './Covid/Covid';
+export {default as Terms_Cond} from './Terms_Cond/Terms_Cond';
+export {default as PrivacyPolicy} from './PrivacyPolicy/PrivacyPolicy';
+export {default as Error} from './Error/Error';

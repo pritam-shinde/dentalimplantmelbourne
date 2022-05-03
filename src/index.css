@@ -1,0 +1,48 @@
+/* include mulish font */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in;
+  font-family: 'Mulish', sans-serif !important;
+}
+
+.custom-btn {
+  font-size: 16px;
+  color: #fff !important;
+  padding: 15px 30px;
+  line-height: 1;
+  transition: all .5s;
+  text-transform: capitalize;
+  position: relative;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+  background-color: #0cb8b6 !important;
+  outline: none;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+ul{
+  list-style-type: none !important;
+}
+
+.MuiAvatar-root {
+  display: inline-flex !important;
+  width: 2rem !important;
+  height: 2rem !important;
+  margin-right: 0.5rem;
+  background-color: #0cb8b6 !important;
+}
+
+.MuiSvgIcon-root {
+  font-size: 1.1rem !important;
+}

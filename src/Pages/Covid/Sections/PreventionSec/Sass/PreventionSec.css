@@ -1,0 +1,28 @@
+#preventionSec .symCard {
+  border: 1px solid #0cb8b6;
+  border-radius: 0.5rem;
+}
+
+#preventionSec .symCard .MuiSvgIcon-root {
+  color: #0cb8b6;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+}
+
+#preventionSec .symCard .symTitle {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+}
+
+#preventionSec .symCard:hover {
+  background-color: #0cb8b6;
+}
+
+#preventionSec .symCard:hover .MuiSvgIcon-root {
+  color: #fff !important;
+}
+
+#preventionSec .symCard:hover .symTitle {
+  color: #fff !important;
+}
+/*# sourceMappingURL=PreventionSec.css.map */

@@ -1,0 +1,27 @@
+.imgContainer {
+  position: relative;
+}
+
+.imgContainer #borderBox {
+  border: 5px solid #0cb8b6;
+  height: 91.2%;
+  width: 94%;
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  z-index: -1;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 576px) {
+  .imgContainer #borderBox {
+    height: 83%;
+    width: 88%;
+  }
+}
+
+.imgContainer:hover #borderBox {
+  top: 1.2rem;
+  left: 1.2rem;
+}
+/*# sourceMappingURL=About.css.map */

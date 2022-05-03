@@ -1,0 +1,1 @@
+export {default as ContentWithHead} from './ContentWithHead/ContentWithHead';

@@ -1,0 +1,30 @@
+.sectionalHeading{
+    & .secTop-title{
+        font-size: 1rem;
+        margin-bottom: 10px;
+        display: inline-block;
+        font-weight: 600;
+        font-family: Roboto,sans-serif !important;
+        color: #0cb8b6;
+    }
+    
+    & .secTitle{
+        font-size: 2.6rem;
+        position: relative;
+        display: block;
+        color: #001430;
+        font-weight: 700;
+        font-family: Roboto,sans-serif !important;
+
+        @media only screen and (max-width: 576px){
+            &{
+                font-size: 2rem;
+            }
+        }
+    }
+    
+    & .secPara{
+        font-size: 1rem;
+        color: #525252;
+    }
+}
