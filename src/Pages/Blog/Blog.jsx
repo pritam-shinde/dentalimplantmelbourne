@@ -18,8 +18,6 @@ const Blog = () => {
     setNoBlog(noOfBlog + 3)
   }
 
-  console.log(blogs)
-
   return (
     <>
       <Helmet>

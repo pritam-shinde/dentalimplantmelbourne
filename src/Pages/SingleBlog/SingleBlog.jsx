@@ -124,8 +124,8 @@ const SingleBlog = () => {
                                                                         <img src={item.yoast_head_json.og_image[0].url} alt="..." height="64" width="64" />
                                                                     </Box>
                                                                     <Box className="flex-grow-1 ms-3">
-                                                                        <Typography>{`${item.date.split("T")[0].split("-")[2]} ${months[Number(item.date.split("T")[0].split("-")[1]) - 1]}, ${item.date.split("T")[0].split("-")[0]}`}</Typography>
-                                                                        <Typography variant="h5"><Link className="text-dark" to={`/blog/${item.slug}/`}>{item.title.rendered ? item.title.rendered : null}{item.title.rendered ? item.title.rendered : null}</Link></Typography>
+                                                                        <Typography style={{fontWeight: 700}}>{`${item.date.split("T")[0].split("-")[2]} ${months[Number(item.date.split("T")[0].split("-")[1]) - 1]}, ${item.date.split("T")[0].split("-")[0]}`}</Typography>
+                                                                        <Typography variant="h4"><Link className="text-dark" to={`/blog/${item.slug}/`}>{item.title.rendered ? item.title.rendered : null}</Link></Typography>
                                                                         <Typography>{`${item.yoast_head_json.og_description.split(" ").slice(0, 20).join(" ")} [...]`}</Typography>
                                                                     </Box>
                                                                 </Box>

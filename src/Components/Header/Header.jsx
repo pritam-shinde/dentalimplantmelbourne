@@ -9,7 +9,14 @@ const useStyles = makeStyles(theme => ({
 }))
 
 const Header = () => {
-  const classes = useStyles()
+  const classes = useStyles();
+
+  let navLinks = document.querySelectorAll('.nav-link');
+  Object.keys(navLinks).map(item => {
+    navLinks[item].addEventListener('click', () => {
+      //  console.log(navLinks[item])
+    })
+})
 
   return (
     <>
