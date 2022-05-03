@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom"
 import { Container, Box, Grid, Typography, Card, CardHeader, CardContent, TextField, Button, } from '@mui/material';
 import './sass/singleBlog.css';
 import parse from 'html-react-parser';
+import Helmet from "react-helmet";
 
 
 const SingleBlog = () => {
@@ -16,9 +17,15 @@ const SingleBlog = () => {
         userComment: ""
     });
 
+    const [Slug, setSlug] = useState(slug)
+
     useEffect(() => {
-        fetch(`https://bayswaterdentist.com.au/blog/wp-json/wp/v2/posts/?slug=${slug}`).then(res => res.json()).then(data => setBlog(data))
-    }, [slug, blog]);
+        setSlug(slug)
+    }, [slug])
+
+    useEffect(() => {
+        fetch(`https://bayswaterdentist.com.au/blog/wp-json/wp/v2/posts/?slug=${Slug}`).then(res => res.json()).then(data => setBlog(data))
+    }, [Slug]);
 
     useEffect(() => {
         fetch('https://bayswaterdentist.com.au/blog/wp-json/wp/v2/posts').then(res => res.json()).then(data => setRecentPost(data.slice(0, 5)), [recentPost])
@@ -49,8 +56,6 @@ const SingleBlog = () => {
             "content": comment.userComment
         });
 
-        console.log(raw)
-
         var requestOptions = {
             method: 'POST',
             headers: myHeaders,
@@ -60,22 +65,27 @@ const SingleBlog = () => {
 
         fetch("https://bayswaterdentist.com.au/blog/wp-json/wp/v2/comments/create", requestOptions)
             .then(response => response.text())
-            .then(result => {console.log(result)})
+            .then(result => { console.log(result) })
             .catch(error => console.log('error', error));
 
-            setComment((prevVal)=>{
-                return{
-                    ...prevVal,
-                    userName: "",
-                    userEmail: "",
-                    userWebsite: "",
-                    userComment: ""
-                }
-            })
+        setComment((prevVal) => {
+            return {
+                ...prevVal,
+                userName: "",
+                userEmail: "",
+                userWebsite: "",
+                userComment: ""
+            }
+        })
     }
+
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
     return (
         <>
+            <Helmet>
+                <title>{blog ? blog[0].title.rendered ? blog[0].title.rendered : null : null}</title>
+            </Helmet>
             <Container maxWidth="xxl" id="singleBlog">
                 <Grid container={true}>
                     <Grid item={true} xs={11} sm={11} md={10} lg={10} className="mx-auto" >
@@ -114,7 +124,8 @@ const SingleBlog = () => {
                                                                         <img src={item.yoast_head_json.og_image[0].url} alt="..." height="64" width="64" />
                                                                     </Box>
                                                                     <Box className="flex-grow-1 ms-3">
-                                                                        <Typography variant="h5"><Link to={`/blog/${item.slug}/`}>{item.title.rendered ? item.title.rendered : null}{item.title.rendered ? item.title.rendered : null}</Link></Typography>
+                                                                        <Typography>{`${item.date.split("T")[0].split("-")[2]} ${months[Number(item.date.split("T")[0].split("-")[1]) - 1]}, ${item.date.split("T")[0].split("-")[0]}`}</Typography>
+                                                                        <Typography variant="h5"><Link className="text-dark" to={`/blog/${item.slug}/`}>{item.title.rendered ? item.title.rendered : null}{item.title.rendered ? item.title.rendered : null}</Link></Typography>
                                                                         <Typography>{`${item.yoast_head_json.og_description.split(" ").slice(0, 20).join(" ")} [...]`}</Typography>
                                                                     </Box>
                                                                 </Box>
