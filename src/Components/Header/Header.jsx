@@ -13,7 +13,7 @@ const Header = () => {
 
   let navLinks = document.querySelectorAll('.nav-link');
   Object.keys(navLinks).map(item => {
-    navLinks[item].addEventListener('click', () => {
+    return navLinks[item].addEventListener('click', () => {
       document.querySelector('.collapse.navbar-collapse').classList.remove('show')
     })
 })

@@ -22,15 +22,15 @@ const PrivacyPolicy = () => {
                                                     item.title.length > 1 ? <><h2>{item.title[0]}</h2> <h3>{item.title[0]}</h3></> : <h2>{item.title}</h2>
                                                 }
                                                 {
-                                                    item.para.length > 0 ? item.para.map(item => {
-                                                        return <p>{item}</p>
+                                                    item.para.length > 0 ? item.para.map((item, index) => {
+                                                        return <p key={`priavacyPolicyPara${index}.${index}`}>{item}</p>
                                                     }) : null
                                                 }
                                                 {
                                                     item.list !== null ? <List className="pl-md-4 pl-2" >
                                                         {
-                                                            item.list.map(item => {
-                                                                return <ListItem>
+                                                            item.list.map((item, index) => {
+                                                                return <ListItem key={`privacyParaList${index}`}>
                                                                     <ListItemIcon>
                                                                         <CheckIcon style={{ color: "#0cb8b6" }} />
                                                                     </ListItemIcon>

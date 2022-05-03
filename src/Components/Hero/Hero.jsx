@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom'
-import { Container, Grid, Box, Typography, Button } from '@mui/material';
+import { Container, Grid, Box, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import { CustomButton, Paragraph } from '../Components'
 import HomeBanner from './Images/home-banner.jpg';

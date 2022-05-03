@@ -1,6 +1,5 @@
 import Routing from "./Routing";
 import { Footer, Header, Topbar } from "./Components/Components";
-import {Navigate} from 'react-router-dom'
 
 const App = () => {
 
